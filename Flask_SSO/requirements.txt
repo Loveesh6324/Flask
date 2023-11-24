@@ -1,0 +1,6 @@
+pathlib
+flask
+google-auth
+google-auth-oauthlib
+vendor
+Flask-Authlib-Client

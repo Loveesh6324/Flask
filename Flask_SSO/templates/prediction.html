@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block title %} Prediction {% endblock %} {% block body %}
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+            <div class="text-center lg:w-2/3 w-full">
+                <marquee>
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">Prediction: {{result}}
+                        <!-- <img src={{file}}> -->
+                    </h1>
+                </marquee>
+                <div>
+                    <a href="{{url_for('logout')}}" class="btn btn-danger btn-xs" onclick="return confirm('Do you want to LOGOUT ?')">Logout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
